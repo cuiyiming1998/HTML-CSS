@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #282c34;
+}
+
+.demo-music{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.demo-music .waves{
+    height: 100px;
+    position: relative;
+    display: flex;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.demo-music .waves li{
+    list-style: none;
+    height: 200px;
+    width: 50px;
+    margin-right: 10px;
+    background-image: linear-gradient(90deg,#80d6ff, #f441a5, #ffed3b, #80d6ff);
+    background-size: 500%;
+}
+
+.demo-music .waves .li1{
+    animation: waves 0.5s linear 0s infinite alternate;
+    -webkit-animation: waves 0.5s linear 0s infinite alternate;
+}
+.demo-music .waves .li2{
+    animation: waves 0.3s linear 0s infinite alternate;
+    -webkit-animation: waves 0.3s linear 0s infinite alternate;
+}
+.demo-music .waves .li3{
+    animation: waves 0.7s linear 0s infinite alternate;
+    -webkit-animation: waves 0.7s linear 0s infinite alternate;
+}
+.demo-music .waves .li4{
+    animation: waves 1s linear 0s infinite alternate;
+    -webkit-animation: waves 1s linear 0s infinite alternate;
+}
+.demo-music .waves .li5{
+    animation: waves 0.8s linear 0s infinite alternate;
+    -webkit-animation: waves 0.8s linear 0s infinite alternate;
+}
+
+@keyframes waves {
+    10% {
+        height: 20%;
+    }
+    20% {
+        height: 30%;
+        background-position: -100% 0;
+    }
+    40% {
+        height: 50%;
+    }
+    60% {
+        height: 25%;
+    }
+    100% {
+        height: 50%;
+    }
+}
